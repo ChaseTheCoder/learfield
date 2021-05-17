@@ -4,3 +4,27 @@
   margin: 0;
 }
 
+/* ---- Nav Bar ---- */
+nav{
+  padding: 0;
+  background-color: #036937;
+  font-family: 'Roboto', sans-serif;
+  border-top: 3px solid #F2A900;
+  border-bottom: 3px solid #F2A900;
+}
+
+/* Nav Bar Links */
+nav a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu, .toggle, .subitem{
+  list-style: none;
+}
+
+.item{
+  padding: 10px 20px 10px 20px;
+}
