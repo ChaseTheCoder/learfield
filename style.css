@@ -28,3 +28,42 @@ nav a{
 .item{
   padding: 10px 20px 10px 20px;
 }
+
+/* Full Width */
+@media all and (min-width: 1024px){
+  .item{
+    position: relative;
+    display: block;
+    width: auto;
+  }
+
+  .submenu{
+    display: none;
+  }
+  
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu li a{
+    display: block;
+    padding: 15px 5px;
+  }
+  
+  .menu li.subitem a{
+    padding: 15px;
+  }
+  
+  .toggle{
+    display: none;
+
+  }
+
+  .item:hover{
+    background: #F2A900;
+    color: #036937;
+  }
+}
