@@ -100,7 +100,7 @@ nav a{
     text-transform: uppercase;
   }
 
-  .has-submenu:hover .submenu {
+  .has-submenu:hover .submenu{
     display: block;
   }
 }
@@ -129,6 +129,7 @@ nav a{
     border-bottom: 1px solid black;
   }
 
+  /* icon active not working */
   nav:hover .menu{
     display: block;
   }
@@ -148,6 +149,13 @@ nav a{
   }
 
   /* submenu */
+  .subitem{
+    display: block;
+    background: #07371D;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+  }
+
   .title a{
     color: #F2A900;
     font-style: italic;
@@ -157,14 +165,12 @@ nav a{
     font-weight: 100;
   }
 
-  .subitem{
-    display: none;
-    background: #07371D;
-    border-bottom: 1px solid #000000;
-    width: 100%;
-  }
-
-  .has-submenu a:active .submenu{
+  /* submenu active not working */
+  .has-submenu:hover .submenu{
     display: block;
+  }
+  
+  .has-submenu:hover .has-submenu > a::after{
+    content: "\f078";
   }
 }
