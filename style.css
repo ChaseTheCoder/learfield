@@ -25,20 +25,13 @@ nav a{
   list-style: none;
 }
 
-.item{
-  padding: 10px 20px 10px 20px;
-}
-
 /* Full Width */
 @media all and (min-width: 1024px){
   .item{
     position: relative;
     display: block;
     width: auto;
-  }
-
-  .submenu{
-    display: none;
+    padding: 10px 20px 10px 20px;
   }
   
   .menu{
@@ -66,4 +59,53 @@ nav a{
     background: #F2A900;
     color: #036937;
   }
+  /* Dropdown Menu */
+  /* aligns MENS WOMENS at top */
+  .submenu{
+    width: 100vw;
+    position: absolute; /* keeps it below nav */
+    top: 77px;
+    left: 0;
+    background-color: #F2F2F2;
+    padding: 40px 0 40px 0;
+  }
+  
+  .submenu ul{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: text-top;
+  }
+  
+  .mens-sports,
+  .womens-sports{
+    width: 45%
+  }
+  
+  .subitem{
+    border-bottom: 1px solid #E5E5E5;
+  }
+  
+  .title a{
+    color: #036937;
+  }
+  .subtitle a{
+    color: #6A6D70;
+    text-transform: uppercase;
+  }
+}
+
+/* Mobile Width */
+@media all and (max-width: 1024px){
+  .toggle{
+    float: right;
+    padding: 10px 20px 10px 20px;
+    display: block;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .item{
+    display: none;
+  }
+
 }
